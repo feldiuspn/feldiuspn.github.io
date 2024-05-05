@@ -1,0 +1,356 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background:#463C52;
+	color:#FFFFF0;
+}
+
+
+.header{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	padding:20px 10%;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	z-index:100;
+	background:#463C52;
+	
+}
+
+.logo{
+	font-size:25px;
+	color:#FFFFF0;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.navbar a{
+	font-size: 18px;
+	color:#FFFFF0;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left:25px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+	color:#7BA448;
+}
+
+
+.accueil{
+	display:flex;
+	align-items: center;
+	height:100vh;
+	padding: 0 10%;
+}
+
+.image-accueil{
+	padding-left: 50px;
+}
+
+.image-accueil img{
+	border-radius:50%;
+	width:150%;
+}
+
+
+.contenu-accueil{
+	max-width:550px;
+}
+
+.contenu-accueil h1{
+	font-size:60px;
+	font-weight:600;
+}
+
+.contenu-accueil h3{
+	font-size:30px;
+	font-weight:600;
+}
+
+.contenu-accueil p{
+	font-size:18px;
+	font-weight:200;
+}
+
+
+.titre{
+	font-size:50px;
+	margin-bottom:2rem;
+	padding-top:4rem;
+	padding-bottom:2rem;
+	text-align:center;
+	background:#463C52;
+}
+
+
+span{
+	color:#FA8072;
+}
+
+
+.apropos{
+	background-color:#B39EB5;
+	height:100vh;
+
+}
+
+
+.contenu-apropos{
+	width:80%;
+	diplay:flex;
+	flex-direction: column;
+	margin: 20px auto;	
+}
+
+
+.contenu-apropos p{
+	font-size:18px;
+	margin-bottom:20px;
+	color:#463C52;
+}
+
+
+.portfolio{
+	width:100%;
+	height:100vh;
+}
+
+.port{
+	display:flex;
+}
+
+.image-portfolio{
+	padding:40px;
+}
+
+.image-portfolio img{
+	border-radius:10%;
+	width:120%;
+}
+
+.contenu-portfolio{
+	width:80%;
+	flex-direction: column;
+	margin: 20px;
+	justify-content: center;
+	padding-left: 20px;
+	
+}
+
+.contenu-portfolio .btn{
+	margin:10px;
+	margin-left: 100px;
+}
+
+
+.formation{
+	width:100%;
+	min-height:100vh;
+	background-color:#B39EB5;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.formation h2{
+	width:100%;
+}
+
+
+.container{
+	width:100%;
+	padding:1px 10%;
+	
+}
+
+main.row{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #463C52;
+}
+
+.experiences .col .contents{
+	border-left: 2px solid #B39EB5;
+}
+
+.col .contents .box {
+	position relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color:#FFFFF0;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom:20px;
+	border: .2rem solid #463C52;
+	border-radius: .6rem;
+
+}
+
+.experiences .col .contents .box {
+	border: .2rem solid #B39EB5;
+}
+
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+
+
+
+.box h4{
+	position: relative;
+	color:#463C52;
+}
+
+
+.box h3{
+	font-size:20px;
+	padding: 10px 0px 6px;
+	color:#424242;
+
+}
+
+.box p{
+	line-height: 1.2;
+	color:#666;
+	font-size: 17px;
+}
+
+
+
+.expériences{
+	width:100%;
+	height:100vh;
+}
+
+.box ul{
+	padding-left:5px;
+	line-height: 1.2;
+	color:#666;
+	font-size: 17px;
+}
+
+.Contact{
+	width:100%;
+	height:100vh;
+	
+}
+
+.contenu-contact{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+	padding: 20px 100px;
+
+	
+}
+
+
+.contenu-contact:after{
+	content:'';
+	position: absolute;
+	left: 0;
+	top:0;
+	width:100%;
+	height:100%;
+	background: url("champs.jpg") no-repeat center;
+	background-size:cover;
+	z-index:-1;
+	filter: blur(5px);
+	
+}
+
+
+.contact-cadre{
+	max-width: 850px;
+
+}
+
+.formulaire{
+	text-align:center;
+}
+
+
+.formulaire h2{
+	position:relative;
+	padding-bottom:30px;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:50px;
+	color:#463C52;
+	padding-top:4rem;
+}
+
+.field{
+	width: 80%;
+	padding:0.5rem 1rem;
+	outline:none;
+	border:2px solid rgba(0, 0, 0, 0);
+	background-color: rgba(230,230,230, 0.6);
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition:.3s;
+}
+
+.field:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+
+.area{
+	min-height:150px;
+	color:#757575;
+}
+
+
+.btn{
+	width: 20%;
+	padding: 0.5rem 1rem;
+	font-size:1.2rem;
+	background-color:#463C52;
+	color:#FFFFF0;
+	outline:none;
+	border: none;
+	align:center;
+	border: .1rem solid #FFFFF0;
+	border-radius: .6rem;
+	text-align:center;
+
+}
+
+.btn:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
